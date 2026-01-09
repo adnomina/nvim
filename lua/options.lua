@@ -24,6 +24,8 @@ opt.completeopt = "fuzzy,menu,menuone,noinsert,popup"
 opt.hlsearch = false
 opt.clipboard = "unnamedplus"
 
+vim.g.mapleader = " "
+
 -- Tree view
 vim.g.netrw_liststyle = 3
 vim.g.netrw_keepdir = 0
