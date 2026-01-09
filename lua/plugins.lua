@@ -8,6 +8,7 @@ vim.pack.add({
     { src = "https://github.com/folke/which-key.nvim" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
+    { src = "https://github.com/dmtrKovalenko/fff.nvim" },
 })
 
 require("mason").setup()

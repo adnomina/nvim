@@ -22,3 +22,10 @@ keymap.set("n", "grd", "<cmd>lua vim.lsp.buf.definition()<CR>", ns)
 -- Update plugins with vim.pack
 keymap.set("n", "<Leader>ps", '<cmd>lua vim.pack.update()<CR>')
 keymap.set("n", "<Leader>e", "<cmd>Lexplore<CR>", ns)
+
+keymap.set(
+    "n",
+    "ff",
+    function() require("fff").find_files() end,
+    { desc = "FFFind files" }
+)

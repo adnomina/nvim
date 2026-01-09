@@ -5,6 +5,10 @@
       "src": "https://github.com/saghen/blink.cmp",
       "version": "1.0.0 - 2.0.0"
     },
+    "fff.nvim": {
+      "rev": "f6af8353c3cb02ddde1588f24f27ff8b3a4037cf",
+      "src": "https://github.com/dmtrKovalenko/fff.nvim"
+    },
     "lualine.nvim": {
       "rev": "47f91c416daef12db467145e16bed5bbfe00add8",
       "src": "https://github.com/nvim-lualine/lualine.nvim"

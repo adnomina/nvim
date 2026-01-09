@@ -13,11 +13,19 @@ autocmd('TextYankPost', {
 
 -- Show floating diagnostic window on hover
 autocmd("CursorHold", {
-    callback = function ()
+    callback = function()
         vim.diagnostic.open_float(nil, {
             focusable = false,
             scope = "cursor",
             close_events = { "BufLeave", "CursorMoved", "InsertEnter" },
         })
+    end,
+})
+
+autocmd("PackChanged", {
+    callback = function(event)
+        if event.data.updated then
+            require("fff.download").download_or_build_binary()
+        end
     end,
 })
